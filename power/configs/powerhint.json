@@ -111,15 +111,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "10",
-        "5"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -222,15 +213,6 @@
       "HoldFd": true
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/sys/kernel/sched_boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -297,12 +279,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "10"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
@@ -330,12 +306,6 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
       "Value": "2597"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 3000,
-      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
